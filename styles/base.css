@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #D91527;
+    --secondary-color: #1a1a1a;
+    --font-color-light: #F4F5F4;
+    --font-color-dark: #000;
+    --border: 3px solid #000;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Orbitron", sans-serif;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+#course-title {
+    display: block;
+    padding: 1rem;
+    font-size: larger;
+    background-color: var(--primary-color);
+    color: var(--font-color-light);
+    text-align: center;
+    font-weight: bold;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--font-color-light);
+    font-weight: bolder;
+}
+
+.navigation a:hover {
+    color: var(--primary-color);
+}
+
+.profile-picture {
+    height: 200px;
+    width: auto;
+}
+
+.city-picture {
+    height: 400px;
+    width: auto;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1.5rem;
+    max-width: 85%;
+    margin: 0 auto;
+    border: var(--border);
+}
+
+main h1 {
+    grid-column: 1/-1;
+    text-align: center;
+    
+} 
+.card {
+    border: var(--border);
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    height: auto;
+}
+
+.card p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+}

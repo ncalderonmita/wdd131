@@ -6,15 +6,20 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Nicolas Calderon</title>
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Nicolas Mateo Calderon Mita - Home Page with Java Script">
     <meta name="author" content="Nicolas Calderon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Orbitron:wght@400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>
         <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
         <nav>
-            <ul>
-                <li><a href="">LinkedIn</a></li>
-                <li><a href="">Canvas</a></li>
-                <li><a href="">Scripture</a></li>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/luke/12?lang=eng&id=p48#p48">Scripture</a></li>
                 <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
@@ -22,15 +27,41 @@
     <main>
         <h1>Nicolas Calderon</h1>
         <section class="card">
-
+            <h2>About me</h2>
+            <img class="profile-picture" src="images/profile.jpg" alt="Nicolas' Picture">
+            <p>
+                Hello! My name is Nicolas Mateo Calderon Mita, and I am from La Paz, Bolivia. I
+                enjoy
+                playing video games and building circuits, and I am currently studying Web Design
+                and
+                Development at BYU. I am also a member of the RJR Team; we meet every Saturday at
+                21:00
+                GMT-4 on
+                Twitch. In addition, I recently scored 90/120 on the TOEFL test, which I am very
+                proud
+                of. I am
+                really excited to learn more about web development and look forward to creating my
+                own
+                websites, like a
+                Gamepad Viewer. I am ready for whatever the future holds for me!
+            </p>
         </section>
         <section class="card">
-
+            <h2>La Paz Bolivia</h2>
+            <img class="city-picture" src="images/la-paz.jpg" alt="La Paz City">
+            <p>
+                La Paz is the vibrant, high-altitude administrative capital of Bolivia, famously
+                perched
+                inside a dramatic, bowl-shaped canyon in the Andes Mountains. Resting at an average
+                elevation of roughly 3,650 meters (nearly 12,000 feet) above sea level, it stands as
+                one
+                of the highest major cities on Earth.
+            </p>
         </section>
     </main>
     <footer>
-        <p></p>
-        <p></p>
+        <p>©️<span id="currentyear"></span>👾 Nicolas Calderon 👾 Bolivia</p>
+        <p><span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
