@@ -93,13 +93,10 @@ h2 {
 
 footer {
     height: auto;
+    text-align: center;
 }
 
 .card p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
-}
-
-footer {
-    text-align: center;
 }
