@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red !important;
 }
 
 :root {
@@ -39,6 +38,21 @@ nav {
 	background-color: var(--secondary-color);
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--font-color-light);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+#menu::before {
+    content: '☰';
+}
+#menu.open::before {
+    content: '❌';
+}
 .navigation {
 	list-style: none;
 	display: flex;
@@ -46,7 +60,7 @@ nav {
 }
 
 .navigation a {
-	display: block;
+	display: none;
 	color: var(--font-color-light);
 	text-align: center;
 	padding: 1rem;
@@ -57,6 +71,10 @@ nav {
 .navigation a:hover {
 	background-color: var(--font-color-light);
 	color: var(--font-color-dark);
+}
+
+.open a {
+    display: block;
 }
 
 main {

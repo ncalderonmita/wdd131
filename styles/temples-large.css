@@ -1,4 +1,7 @@
 @media (min-width: 740px) {
+    #menu {
+        display: none;
+    }
 	header {
 		display: flex;
 		align-items: center;
