@@ -53,12 +53,15 @@ nav {
 #menu.open::before {
     content: '❌';
 }
-.navigation {
-	list-style: none;
+nav {
+	background-color: var(--secondary-color);
 	display: flex;
 	flex-direction: column;
 }
 
+.navigation {
+    list-style: none;
+}
 .navigation a {
 	display: none;
 	color: var(--font-color-light);
