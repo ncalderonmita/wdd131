@@ -108,6 +108,7 @@ footer {
     height: auto;
     text-align: center;
     background-color: var(--primary-color);
+    font-weight: bold;
     color: var(--font-color-light);
     font-size: larger;
 }
