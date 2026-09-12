@@ -34,9 +34,6 @@ header p {
     font-weight: bold;
 }
 
-nav {
-	background-color: var(--secondary-color);
-}
 
 #menu {
     font-size: 1.5rem;
