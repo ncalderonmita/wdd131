@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- Sun Elements (Gold/Yellow fill, centered behind the top-right of the cloud) -->
+  <g fill="#FFD700">
+    <!-- Solid Sun Body -->
+    <circle cx="8" cy="6" r="3.2" />
+
+    <!-- Sun Rays with Rounded Ends -->
+    <!-- Top Ray -->
+    <line x1="8" y1="1.2" x2="8" y2="0.2" stroke="#FFD700" stroke-width="1.2" stroke-linecap="round" />
+    <!-- Top-Right Ray -->
+    <line x1="11.4" y1="2.6" x2="12.1" y2="1.9" stroke="#FFD700" stroke-width="1.2" stroke-linecap="round" />
+    <!-- Right Ray -->
+    <line x1="12.8" y1="6" x2="13.8" y2="6" stroke="#FFD700" stroke-width="1.2" stroke-linecap="round" />
+    <!-- Bottom-Right Ray -->
+    <line x1="11.4" y1="9.4" x2="12.1" y2="10.1" stroke="#FFD700" stroke-width="1.2" stroke-linecap="round" />
+    <!-- Top-Left Ray -->
+    <line x1="4.6" y1="2.6" x2="3.9" y2="1.9" stroke="#FFD700" stroke-width="1.2" stroke-linecap="round" />
+  </g>
+
+  <!-- Cloud Element (White fill with subtle outline for light backgrounds) -->
+  <path fill="#FFFFFF" stroke="#D0D7DE" stroke-width="0.3" d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5z" />
+</svg>

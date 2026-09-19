@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <meta name="description" content="Page about Bolivia my homeland">
+    <meta name="author" content="Nicolas Calderon">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Bolivia</h1>
+
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/leopardus-tilcayo.webp" media="(min-width: 1000px)">
+                <img src="images/leopardus-tilcayo-small.webp" alt="Leopardus tilcayo image" width = "399" height="501">
+            </picture>
+            <div class="information data-card">
+                <h2>Data</h2>
+                <dl class="country-data">
+                    <dt>Area:</dt>
+                    <dd>1,098,581 sq km</dd>
+                    <dt>Population:</dt>
+                    <dd>11,365,333</dd>
+                    <dt>Capital:</dt>
+                    <dd>Sucre</dd>
+                    <dt>Languages:</dt>
+                    <dd>Spanish, Quechua, Aymara, Guarani, etc</dd>
+                    <dt>Currency:</dt>
+                    <dd>Boliviano</dd>
+                    <dt>Time Zone:</dt>
+                    <dd>UTC-4</dd>
+                    <dt>Calling Code:</dt>
+                    <dd>+591</dd>
+                    <dt>Internet TLD:</dt>
+                    <dd>.bo</dd>
+                </dl>
+            </div>
+
+            <div class="information weather">
+                <h2>Weather</h2>
+                <img class="cloud-icon" src="images/cloud-sun-fill.svg" alt="Weather Image">
+                <dl class="country-data">
+                    <dt>Temperature:</dt>
+                    <dd id="temperature">3 °C</dd>
+                    <dt>Conditions:</dt>
+                    <dd>Snow</dd>
+                    <dt>Wind:</dt>
+                    <dd id="wind-speed">5 km/h</dd>
+                    <dt>Wind Chill:</dt>
+                    <dd id="wind-chill"></dd>
+                </dl>        
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>©️<span id="currentyear"></span>👾 Nicolas Calderon 👾 Bolivia</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
