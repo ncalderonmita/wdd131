@@ -135,7 +135,7 @@ footer {
     width: 50%;
     text-align: center;
   }
-  #cloud::before {
+  #cloud::after {
     content: '🌥️';
     font-size: xx-large;
   }
