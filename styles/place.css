@@ -2,6 +2,7 @@
     --primary-color: rgb(179, 20, 20);
     --secondary-color: rgb(212, 200, 29);
     --third-color: rgb(103, 233, 103);
+    --fourth-color: rgb(6, 112, 29);
     --font-color-alt: rgb(255, 255, 255);
     --border: 1px solid #000000;
 }
@@ -13,8 +14,8 @@
 }
 
 body {
-  background-color: var(--secondary-color);
-}
+    font-family: 'Space Grotesk', sans-serif;
+} 
 
 header{
   margin: 0 auto;
@@ -22,7 +23,8 @@ header{
 }
 main {
 	margin: 0 auto;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: var(--secondary-color);
 }
 
 header {
@@ -36,7 +38,7 @@ picture {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%; 
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 picture img {
@@ -51,7 +53,7 @@ picture img {
 .information {
     text-align: center;
     padding: 0.5rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
 .country-data {
@@ -92,7 +94,7 @@ footer {
 
 
 @media (min-width: 1000px) {
-    .hero {
+  .hero {
     position: relative;
   }
   .cloud-icon{
@@ -118,6 +120,9 @@ footer {
   .dynamic-title {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--fourth-color);
+    color: var(--font-color-alt);
   }
 
   .dynamic-title h2 {
@@ -132,13 +137,24 @@ footer {
   }
   #cloud::before {
     content: '🌥️';
+    font-size: xx-large;
   }
 
   .information {
     background-color: var(--third-color);
     border: var(--border); 
     border-radius: 7%;
-    opacity: 74%;
+    opacity: 60%;
+    font-size: larger;
+  }
+  
+  h2 {
+    padding: 0.5rem;
+  }
+
+  .data-card h2 {
+    background-color: var(--fourth-color);
+    color: var(--font-color-alt);
   }
 
   
