@@ -35,7 +35,6 @@ picture {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%; 
-  /* margin-bottom: 1rem; */
 }
 
 picture img {
@@ -44,13 +43,13 @@ picture img {
   margin-right: auto;
   width: 100%;      
   height: auto;    
+  border-radius: 3%;
 }
 
 
 .information {
     text-align: center;
     padding: 0.5rem;
-    /* margin-bottom: 1rem; */
 }
 
 .country-data {
@@ -81,7 +80,7 @@ picture img {
 footer {
     height: auto;
     text-align: center;
-    background-color: var(--primary-color);
+    background-color: var(--fourth-color);
     font-weight: bold;
     color: var(--font-color-alt);
     font-size: larger;
