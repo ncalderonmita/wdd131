@@ -1,0 +1,61 @@
+:root {
+    --head-background: rgb(25, 26, 25);
+    --head-text: rgb(255, 255, 255);
+    --sub-head-background: rgb(46, 46, 46);
+    --border: 1px solid black;
+    --zebra: hsl(0, 0%, 93%, 1);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    font-family: "Orbitron", sans-serif;
+    font-size: xx-large;
+}
+
+
+table {
+    margin: 10px auto;
+    border: var(--border);
+    /* to combine borders in tables*/
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 1rem;
+    caption-side: bottom;
+    font-size: .95rem;
+}
+
+tr:first-child th {
+    background-color: var(--head-background);
+    color: var(--head-text);
+}
+
+th, td {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+td {
+    border: var(--border);
+}
+
+th {
+    background-color: var(--sub-head-background);
+    color: var(--head-text);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra);
+}
+
+.empty-header {
+    background-color: var(--head-background);
+}
