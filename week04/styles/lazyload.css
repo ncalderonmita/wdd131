@@ -5,9 +5,27 @@
 }
 
 main {
-    margin: auto 0;
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
 }
 
 img {
-    display: block;
+    width: 100%;
+    background-color: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
