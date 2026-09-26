@@ -3,18 +3,13 @@ const today = new Date();
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
-if (year) {
-  year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-}
+year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
-const lastModifiedEl = document.getElementById("lastModified");
-if (lastModifiedEl) {
-  lastModifiedEl.textContent = document.lastModified;
-}
+document.getElementById("lastModified").textContent = document.lastModified;
 
-hamButton?.addEventListener('click', () => {
-	navigation?.classList.toggle('open');
-	hamButton?.classList.toggle('open');
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
 
 const temples = [
