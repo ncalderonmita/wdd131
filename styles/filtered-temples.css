@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #D91527;
+    --secondary-color: #1a1a1a;
+    --font-color-light: #F4F5F4;
+    --font-color-dark: #000;
+    --border: 3px solid #000;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+header {
+	background-color: var(--primary-color);
+	display: grid;
+	grid-gap: 1rem;
+}
+
+header,
+main {
+	margin: 0 auto;
+}
+
+header p {
+	font-size: 2rem;
+    color: var(--font-color-light);
+    padding: 1rem;
+    font-weight: bold;
+}
+
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--font-color-light);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+#menu::before {
+    content: '☰';
+}
+#menu.open::before {
+    content: '❌';
+}
+nav {
+	background-color: var(--secondary-color);
+	display: flex;
+	flex-direction: column;
+}
+
+.navigation {
+    list-style: none;
+}
+.navigation a {
+	display: none;
+	color: var(--font-color-light);
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
+
+.navigation a:hover {
+	background-color: var(--font-color-light);
+	color: var(--font-color-dark);
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    place-items: center;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    height: auto;
+    text-align: center;
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color: var(--font-color-light);
+    font-size: larger;
+}
+
+
+
+
+
