@@ -15,9 +15,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; 
 }
 
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 h2,h3 {
     font-weight: bold;
     text-decoration: underline;
@@ -56,4 +64,18 @@ h2,h3 {
     color: var(--font-color-light);
     padding: .75rem;
     text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+.wiref {
+    width: 750px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
 }
