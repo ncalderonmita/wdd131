@@ -1,0 +1,38 @@
+
+@media (min-width: 768px) {
+    
+    header, form, footer {
+        max-width: 750px;
+        padding: 1.5rem;
+    }
+
+    form {
+        margin-top: 2rem;
+    }
+
+    
+    .checkbox-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem 1.5rem;
+    }
+
+    
+    form fieldset {
+        padding: 1.2rem 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    
+    .submitBtn {
+        transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .submitBtn:hover {
+        background-color: #73020d; /
+    }
+
+    .submitBtn:active {
+        transform: scale(0.98);
+    }
+}

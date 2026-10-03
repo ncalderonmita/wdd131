@@ -11,16 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (selectElement) {
         products.forEach(product => {
             const option = document.createElement('option');
-            option.value = product.name;
+            
+            option.value = product.id; 
             option.textContent = product.name;
             selectElement.appendChild(option);
         });
     }
 
-    if (localStorage.getItem('reviewCount') === null) {
-        localStorage.setItem('reviewCount', 0);
-    }
-
+    
     const year = document.querySelector("#currentyear");
     const today = new Date();
     year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submission Confirmed</title>
+    <meta name="description" content="Confirmation page for the product review submission.">
+    <meta name="author" content="Nicolas Calderon Mita">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    
+    <script src="scripts/review.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Submission Received</h1>
+    </header>
+
+    
+    <main class="confirmation-container">
+        <div class="form">
+            <fieldset>
+                <legend>Success!</legend>
+                <div style="text-align: center; padding: 1rem 0;">
+                    <p style="font-size: 1.2rem; margin-bottom: 1rem; font-weight: bold;">
+                        Thank you for your feedback, Nicolas!
+                    </p>
+                    <p style="margin-bottom: 1.5rem;">
+                        Your product review has been logged successfully.
+                    </p>
+                    
+                    
+                    <div id="counter-display" style="font-weight: bold; background: var(--primary-color); color: var(--font-color-light); display: inline-block; padding: 0.5rem 1rem; border-radius: 4px; border: var(--border);">
+                        Total Reviews Submitted: Loading...
+                    </div>
+                </div>
+            </fieldset>
+            
+            <a href="form.html" class="submitBtn" style="text-align: center; text-decoration: none; display: block;">
+                Submit Another Review
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>©️<span id="currentyear"></span>👾 Nicolas Calderon 👾 Bolivia</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
