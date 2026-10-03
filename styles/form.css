@@ -160,3 +160,16 @@ footer {
     border: 0;
 }
 
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+
+.checkbox-item label {
+    display: inline;
+    margin: 0;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
