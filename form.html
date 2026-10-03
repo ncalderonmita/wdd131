@@ -22,9 +22,9 @@
         <fieldset>
             <legend>Product Name</legend>
             <label for="product-name" class="sr-only">Product Name</label>
-                <select name="product" id="product-name" required disabled>
-                    <option value="">Choose a Product ...</option>
-                </select>
+            <select name="product" id="product-name" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
         </fieldset>
 
         <fieldset>
@@ -45,10 +45,19 @@
 
         <fieldset>
             <legend>Which features did you find useful in the product? (Check all that apply)</legend>
-            <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
-            <label><input type="checkbox" name="ease" value="yes" id="ease">Ease of Use</label>
-            <label><input type="checkbox" name="performance" value="yes" id="performance">Performance</label>
-            <label><input type="checkbox" name="design" value="yes" id="design">Design</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="durability" value="yes" id="durability">
+                <label for="durability">Durability</label>
+
+                <input type="checkbox" name="ease" value="yes" id="ease">
+                <label for="ease">Ease of Use</label>
+
+                <input type="checkbox" name="performance" value="yes" id="performance">
+                <label for="performance">Performance</label>
+
+                <input type="checkbox" name="design" value="yes" id="design">
+                <label for="design">Design</label>
+             </div>
         </fieldset>
 
         <fieldset>
