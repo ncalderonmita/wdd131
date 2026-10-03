@@ -22,7 +22,7 @@
         <fieldset>
             <legend>Product Name</legend>
             <label for="product-name" class="sr-only">Product Name</label>
-                <select name="product" id="product-name" required>
+                <select name="product" id="product-name" required disabled>
                     <option value="">Choose a Product ...</option>
                 </select>
         </fieldset>
@@ -38,12 +38,13 @@
             </div>
         </fieldset>
         <fieldset>
-            <legend>Date of Installation <input type="date" name="installation-date" id="i-date" required></legend>
+            <legend>Date of Installation</legend>
+            <label for="i-date" class="sr-only">Date of Installation</label>
+            <input type="date" name="installation-date" id="i-date" required>
         </fieldset>
 
         <fieldset>
             <legend>Which features did you find useful in the product? (Check all that apply)</legend>
-            <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
             <label><input type="checkbox" name="durability" value="yes" id="durability">Durability</label>
             <label><input type="checkbox" name="ease" value="yes" id="ease">Ease of Use</label>
             <label><input type="checkbox" name="performance" value="yes" id="performance">Performance</label>
