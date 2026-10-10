@@ -1,0 +1,164 @@
+:root {
+    --color-bg: #2907EF;
+    --color-ft: #fff;
+    --color-bg-dark: #080808;
+    --img-border: 5px solid #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-bg);
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--color-ft);
+    margin: 2rem 0;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 10rem;
+}
+
+h2 {
+    font-size: 7rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: var(--color-ft);
+    text-align: justify;
+}
+
+.navigation-bar {
+    background-color: var(--color-bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--color-ft);
+    text-decoration: none;
+}
+
+.info {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.info img {
+    display: block;
+    width: 75%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 170px 0px 170px 0px;
+    border: var(--img-border);
+}
+
+.tournaments {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+.tournaments p {
+    width: 100%;
+    text-align: center;
+}
+
+.tournaments section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.results {
+    width: 100%;
+    height: auto;
+}
+.cup {
+    width: 860px;
+    height: auto;
+}
+.container {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+
+}
+.pool {
+    position: absolute;    
+}
+
+.first {
+    top: 25%;
+    left: 31%;
+}
+
+.two {
+    top: 25%;
+    left: 35%;
+}
+
+.three {
+    top: 25%;
+    left: 35%;
+}
+.pool dt {
+    width: 100%;             
+    text-align: center;       
+    font-weight: bold; 
+}
+
+.pool dd {
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: var(--color-bg-dark);
+    width: 100%;
+}
+footer img {
+    width: 100px;
+}
+
+.socialmedia {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
