@@ -116,4 +116,60 @@
     .first, .two, .three {
         top: 23%;
     }
+
+
+    /* ABOUT */
+
+
+    .sub-menu {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+
+    .sub-menu h3 {
+        padding-bottom: 0;
+        margin: 0;
+    }
+
+    
+    #submenu {
+        display: none;
+    }
+
+    
+    .sub-nav {
+        background: none;
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+    }
+
+    .sb-navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: var(--color-sub-nav-open);
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    
+    .sb-navigation a {
+        display: block;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 3rem;
+        color: var(--color-bg-dark);
+    }
+
+    .sb-navigation a:hover {
+        background-color: transparent;
+        text-decoration: underline;
+        color: var(--color-bg-dark);
+    }
+
 }
