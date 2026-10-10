@@ -10,33 +10,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    <nav class="navigation-bar">
+    <header>
+        <button type="button" id="menu" aria-label="Open Navigation Menu Option"></button>
         <img src="images/logo.webp" alt="logo">
-        <ul class="nav">
+        <nav class="top-nav">
+            <ul class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="">Our Team</a></li>
             <li><a href="">Contact</a></li>
         </ul>
-    </nav>
+        </nav>
+    </header>
+
     <div class="info">
         <h1>TEAM RAPID JUGGERNAUT RAMPAGE</h1>
         <picture>
-            <source srcset="images/hero-image.webp" media="(min-width: 1920px)">
+            <source srcset="images/hero-image.webp" media="(min-width: 740px)">
             <img src="images/hero-image-small.webp" alt="banner image" width="399" height="501">
         </picture>
         <h2>Who are we?</h2>
         <p>"We desire to be stronger." Born from a shared drive to push beyond limits, Rapid Juggernaut Rampage (RJR) is an e-sports team dedicated to mastering fighting games, with a primary focus on the Tekken franchise. We persist, improve, and unite—because true victory is built on unlimited passion and relentless perseverance.
         </p>
     </div>
-    <div class="tournaments">
+    <main class="tournaments">
         <h2>Tournaments Results</h2>
         <p>We organized many tournaments around this year. As a result the team organized three different editions of the ARENA G-CUP. We celebrate our winners!</p>
 
         <h3>ARENA G-CUP V1.0</h3>
         <section>
-            <img src="images/g-cup-1.webp" alt="g-cup-1" class="results">
+            <!-- <img src="images/g-cup-1.webp" alt="g-cup-1" class="results"> -->
+            <picture class="results">
+                    <source srcset="images/g-cup-1.webp" media="(min-width: 740px)">
+                    <img src="images/g-cup-1-small.webp" alt="banner image" width="350" height="411">
+            </picture>
             <article class="container">
                 <img src="images/cup.svg" alt="prize pool" class="cup">
                 <dl class="pool first">
@@ -50,7 +60,11 @@
         
         <h3>ARENA G-CUP V2.0</h3>
         <section>
-            <img src="images/g-cup-2.webp" alt="g-cup-2" class="results">
+            <!-- <img src="images/g-cup-2.webp" alt="g-cup-2" class="results"> -->
+             <picture class="results">
+                    <source srcset="images/g-cup-2.webp" media="(min-width: 740px)">
+                    <img src="images/g-cup-2-small.webp" alt="banner image" width="350" height="411">
+            </picture>
             <article class="container">
                 <img src="images/cup.svg" alt="prize pool" class="cup">
                 <dl class="pool two">
@@ -64,7 +78,11 @@
         
         <h3>ARENA G-CUP V3.0</h3>
         <section>
-            <img src="images/g-cup-3.webp" alt="g-cup-3" class="results">
+            <!-- <img src="images/g-cup-3.webp" alt="g-cup-3" class="results"> -->
+             <picture class="results">
+                    <source srcset="images/g-cup-3.webp" media="(min-width: 740px)">
+                    <img src="images/g-cup-3-small.webp" alt="banner image" width="350" height="411">
+            </picture>
             <article class="container">
                 <img src="images/cup.svg" alt="prize pool" class="cup">
                 <dl class="pool three">
@@ -75,7 +93,7 @@
                 </dl>
             </article>
         </section>
-    </div>
+    </main>
     
     <footer>
         <p>© 2026 Rapid Juggernaut Rampage. Designed by Nicolas Calderon.</p>

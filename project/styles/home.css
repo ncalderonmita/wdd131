@@ -2,7 +2,10 @@
     --color-bg: #2907EF;
     --color-ft: #fff;
     --color-bg-dark: #080808;
+    --color-nav-open: #383838;
     --img-border: 5px solid #000;
+    --border: 3px solid #000;
+    --color-cup: #ece86f;
 }
 
 * {
@@ -11,154 +14,203 @@
     padding: 0;
 }
 
+
 body {
+    font-family: "Roboto", sans-serif;
+    color: var(--color-ft);
     background-color: var(--color-bg);
-    width: 100%;
 }
 
-h1, h2, h3 {
-    font-family: "Bebas Neue", sans-serif;
-    color: var(--color-ft);
-    margin: 2rem 0;
-    text-align: center;
+header {
+	background-color: var(--color-bg-dark);
+	display: grid;
+	grid-gap: 1rem;
 }
 
-
-h1 {
-    font-size: 10rem;
+header,
+main {
+	margin: 0 auto;
 }
 
-h2 {
-    font-size: 7rem;
+header img {
+    width: 150px;
+    height: auto;
+    padding: 1rem;
 }
-
-h3 {
-    font-size: 5rem;
-}
-p {
-    font-family: 'Roboto', sans-serif;
+#menu {
     font-size: 2rem;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 3.5rem;
+    right: 3rem;
+}
+#menu::before {
+    content: '☰';
     color: var(--color-ft);
-    text-align: justify;
+}
+#menu.open::before {
+    content: '❌';
+}
+.top-nav {
+	background-color: var(--color-nav-open);
+	display: flex;
+	flex-direction: column;
 }
 
-.navigation-bar {
-    background-color: var(--color-bg-dark);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.nav {
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.nav li {
+.navigation {
     list-style: none;
 }
+.navigation a {
+	display: none;
+	color: var(--color-ft);
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: larger;
+}
 
-.nav a {
-    font-size: 3rem;
-    font-family: 'Bebas Neue', sans-serif;
-    color: var(--color-ft);
-    text-decoration: none;
+.navigation a:hover {
+	background-color: var(--color-bg);
+	color: var(--color-ft);
+}
+
+.open a {
+    display: block;
 }
 
 .info {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.info img {
-    display: block;
-    width: 75%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 170px 0px 170px 0px;
-    border: var(--img-border);
-}
-
-.tournaments {
     width: 90%;
     margin: 0 auto;
-    padding: 5rem;
+    padding: 2rem 0 2rem 0;
+}
+
+
+picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; 
+}
+
+picture img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;      
+  height: auto;    
+}
+
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+p {
+    text-align: justify;
+}
+
+
+
+
+.tournaments {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
 .tournaments p {
-    width: 100%;
-    text-align: center;
+    text-align: justify;
+    margin-bottom: 2rem;
 }
 
 .tournaments section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
-.results {
-    width: 100%;
-    height: auto;
-}
+
 .cup {
-    width: 860px;
+    width: 100%;
+    min-width: 350px;
     height: auto;
 }
+
+
+/* CUP */
 .container {
     position: relative;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-
+    color: var(--color-bg-dark);
+    font-size: 1.2rem;
+    width: 100%;
 }
+
 .pool {
-    position: absolute;    
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    width: 45%;
+    background-color: var(--color-cup);
+    border-radius: 10px;
+    border: var(--img-border);
 }
 
-.first {
-    top: 25%;
-    left: 31%;
+.first, .two, .three {
+    top: 24%;
+    left: 29%;
 }
 
-.two {
-    top: 25%;
-    left: 35%;
-}
-
-.three {
-    top: 25%;
-    left: 35%;
-}
 .pool dt {
-    width: 100%;             
-    text-align: center;       
-    font-weight: bold; 
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .pool dd {
     width: 100%;
     text-align: center;
+    font-size: 0.9rem;
 }
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 2rem;
     background-color: var(--color-bg-dark);
     width: 100%;
+    text-align: center;
 }
-footer img {
-    width: 100px;
+
+footer p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .socialmedia {
-    width: 40%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
+}
+
+footer img {
+    width: 40px;
 }
