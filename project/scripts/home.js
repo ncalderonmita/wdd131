@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <div class="member-information">
           <p>Join in: ${member.dedicated}</p>
-          <p>Tekken Prowess: ${member.tekken_prowess.toLocaleString()} points </p>
+          <p>Tekken Prowess: ${member.tekken_prowess.toLocaleString()} p</p>
         </div>
       `;
       container.appendChild(card);

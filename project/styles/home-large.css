@@ -113,9 +113,9 @@
         font-size: 2rem;
     }
     
-    .first, .two, .three {
+    /* .first, .two, .three {
         top: 23%;
-    }
+    } */
 
 
     /* ABOUT */
@@ -145,7 +145,7 @@
         background: none;
         display: flex;
         flex-direction: row;
-        width: 60%;
+        width: 50%;
     }
 
     .sb-navigation {
@@ -172,4 +172,20 @@
         color: var(--color-bg-dark);
     }
 
+    .team-container {
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .member-card {
+        
+        height: 750px;
+    }
+
+    .member-card img {
+        height: 413px;
+    }
+
+    h4 {
+        font-size: 5rem;
+    }
 }
