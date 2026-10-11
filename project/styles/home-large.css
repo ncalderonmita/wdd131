@@ -145,7 +145,7 @@
         background: none;
         display: flex;
         flex-direction: row;
-        width: 50%;
+        width: 70%;
     }
 
     .sb-navigation {
@@ -164,6 +164,7 @@
         border-radius: 5px;
         font-size: 3rem;
         color: var(--color-bg-dark);
+        white-space: nowrap;
     }
 
     .sb-navigation a:hover {
