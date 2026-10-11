@@ -145,7 +145,7 @@
         background: none;
         display: flex;
         flex-direction: row;
-        width: 20%;
+        width: 100%;
     }
 
     .sb-navigation {
