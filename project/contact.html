@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="This is a contact-us page for the Team RJR website">
+    <meta name="author" content="Nicolas Calderon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-large.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <button type="button" id="menu" aria-label="Open Navigation Menu Option"></button>
+        <img src="images/logo.webp" alt="logo">
+        <nav class="top-nav">
+            <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Our Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <h1>Contact Us</h1>
+    
+
+    <form method="get">
+        <fieldset>
+            <legend>Send us a message</legend>
+
+            <label for="cname">*Name:  
+                <input type="text" name="cname" id="cname" required>
+            </label>
+
+            <label for="email">*Email: 
+                <input type="email" name="email" id="email" required>
+            </label>
+
+            <label for="written-inquiry">*Write your comments or questions here: 
+                <textarea name="written-inquiry" id="written-inquiry" required></textarea>
+            </label>
+        </fieldset>
+
+        <div class="form-actions">
+            <button type="submit" class="submitBtn">Send comments</button>
+        </div>
+    </form>
+
+
+    <footer>
+        <p>© 2026 Rapid Juggernaut Rampage. Designed by Nicolas Calderon.</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/profile.php?id=61594312834432&sk=directory_links&fb_profile_edit_entry_point=%7B%22feature%22%3A%22profile_directory%22%2C%22click_point%22%3A%22pencil_edit_directory_section%22%2C%22additional_metadata%22%3A%7B%22section_type%22%3A%22links%22%7D%7D">
+                <img src="images/facebook.svg" alt="Facebook Icon" width="50">
+            </a>
+            <a href="https://www.twitch.tv/rjrteam">
+                <img src="images/twitch.svg" alt="Twitch Icon" width="50">
+            </a>
+            <a href="https://x.com/RJRteam8">
+                <img src="images/twitter-x.svg" alt="X Icon" width="50">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>

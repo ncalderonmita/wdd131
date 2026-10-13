@@ -189,4 +189,31 @@
     h4 {
         font-size: 5rem;
     }
+
+    /* FORM */
+
+    form {
+        padding: 1.5rem;
+    }
+
+    form legend {
+        font-size: 7rem;
+    }
+
+    form fieldset label {
+        font-size: 2rem;
+        margin: 2rem;
+    }
+
+    form input[type="text"], form input[type="email"] {
+        font-size: 2rem;
+    }
+
+    textarea {
+        font-size: 2rem;
+    }
+
+    .submitBtn {
+        font-size: 2rem;
+    }
 }

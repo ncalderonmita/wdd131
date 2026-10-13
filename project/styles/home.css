@@ -339,3 +339,80 @@ h4 {
     margin: 0 auto;
     padding: 1rem;
 }
+
+
+/* FORM */
+
+
+form {
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+    background-color: var(--sub-nav-bg);
+    padding: .5rem;
+    border-radius: 30px;
+}
+
+
+form fieldset {
+    margin: 1.2rem 0;
+    border: var(--border);
+    border-radius: 6px;
+    padding: .75rem .8rem;
+}
+
+form legend {
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 0 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    max-height: 160px;
+    resize: vertical;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: var(--border);
+    border-radius: 4px;
+    margin-top: 0.4rem;
+}
+
+form fieldset label {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0.4rem 0;
+    font-size: 1rem;
+
+}
+
+form input[type="text"], form input[type="email"]{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    font-size: 0.95rem;
+    border: var(--border);
+    border-radius: 4px;
+} 
+
+
+.submitBtn {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    background-color: var(--color-cup);
+    color: var(--color-bg-dark);
+    font-weight: bold;
+    font-size: 1rem;
+    border: var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
